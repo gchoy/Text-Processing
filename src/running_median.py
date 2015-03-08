@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 
-#Recurring_Mean with file streaming implemented for python 3.4
-#Implementing sys.argv variables
+#Script implemtented in python 3.4.2
+#Calculates the running mean of files in wc_input. Takes up files in alphabetical order through a file stream.
 
 
 import string
@@ -17,11 +17,10 @@ path = sys.argv[1]
 
 rm=open(sys.argv[2],'w')
 
-for line in fileinput.input(sorted(glob.glob(path+'/*.txt'))):
+for line in fileinput.input(sorted(glob.glob(path+'/*.txt'))):  #fileinput reads each file line by line while sorted. Will select only those that have a .txt extension in their name. 
     
-    #print line
-    
-    line = line.translate(str.maketrans("","", string.punctuation))
+        
+    line = line.translate(str.maketrans("","", string.punctuation)) #Strips all the punctuation from a line of text.
     line = line.split()
 
     nwords = len(line)
