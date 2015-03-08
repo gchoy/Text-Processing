@@ -10,8 +10,8 @@ and uses python 3.4.2 standard library modules.
 Once the scripts are finished processing all the files in
 wc_input folder two lines will be printed:
 
--wc_result generated
--med_result generated
+- wc_result generated
+- med_result generated
 
 indicating that result files were created in the output folder.
 
