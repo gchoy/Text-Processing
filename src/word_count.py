@@ -1,8 +1,9 @@
 #!usr/bin/env python3
 
+#Script implemented in python 3.4.2
+#Counts the word frequency for files located in wc_input folder
 
-#Word_count with file streaming implemented for python 3.4
-#Implementing sys.argv variables
+
 
 import string
 import glob
@@ -15,9 +16,8 @@ path = sys.argv[1]
 
 r=open(sys.argv[2],'w') 
 
-for line in fileinput.input(glob.glob(path+'/*.txt')):
+for line in fileinput.input(glob.glob(path+'/*.txt')): #fileinput reads each file line by line. Will select only those that have a .txt extension in their name.
     
-    #print line
     line = line.rstrip('\n')
     line = line.translate(str.maketrans("","", string.punctuation))
     line = line.split()
