@@ -1,5 +1,5 @@
 # Text-Processing
-Basic text file processing. Includes word count and  running mean for all files in wc_input folder
+Provides basic text file processing. Includes scripts that count all the words of a group of files and determines the running mean of these files
 
 Just download and run using bash run.sh
 
@@ -14,7 +14,7 @@ wc_input folder two lines will be printed:
 wc_result generated
 med_result generated
 
-indicating that result files were placed in the output folder.
+indicating that result files were created in the output folder.
 
 
 
