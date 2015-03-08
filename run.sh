@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-#apt-get install python-pandas
+#import filename
+#import glob
+#import sys
+#import string
 
 chmod a+x ./src/word_count.py
 chmod a+x ./src/running_median.py
